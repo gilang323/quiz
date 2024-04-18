@@ -16,9 +16,9 @@ class App extends Component {
       quizEnd: false,
       timeLeft: null,
     };
-    this.timeLimit = 5 * 60 * 1000; // Durasi 1 menit dalam milidetik
-    this.startTime = Date.now(); // Waktu mulai quiz
-    this.timer = null; // Timer untuk menghitung waktu
+    this.timeLimit = 5 * 60 * 1000; 
+    this.startTime = Date.now();
+    this.timer = null;
   }
 
   componentDidMount() {
@@ -52,7 +52,7 @@ class App extends Component {
   };
 
   checkAnswer = () => {
-    const { questionBank, currentQuestion, selectedOption, score } = this.state;
+    const { questionBank, currentQuestion, selectedOption } = this.state;
     if (selectedOption === questionBank[currentQuestion].answer) {
       this.setState((prevState) => ({ score: prevState.score + 1 }));
     }
@@ -80,7 +80,6 @@ class App extends Component {
   };
 
   handleTimeout = () => {
-    // Panggil fungsi ini saat waktu habis
     this.setState({ quizEnd: true });
   };
 
