@@ -1,0 +1,21 @@
+body {
+  background-color: #292b2e;
+  color: #ffffff;
+  }
+  
+  .app-title {
+  color: #ffffff;
+  margin-top: 2rem;
+  }
+  
+/* App.css */
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.button-container button {
+  margin-right: 10px; /* Atur margin kanan sesuai kebutuhanmu */
+}
+
