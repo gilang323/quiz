@@ -81,7 +81,6 @@ class App extends Component {
 
   handleTimeout = () => {
     // Panggil fungsi ini saat waktu habis
-    alert("Waktu sudah habis!");
     this.setState({ quizEnd: true });
   };
 
